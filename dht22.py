@@ -50,7 +50,7 @@ def tempcheck(x):
             continue
         except Exception as error:
             dhtDevice.exit()
-            raise error
+            # raise error - Do not raise error since we dont care
 
         time.sleep(2.0)
     if current_temp_f != None and current_temp_c != None and current_humidity != None:
